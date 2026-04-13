@@ -46,14 +46,14 @@
 2. Click **"Add user"**
 3. Create users:
    - **Super Admin:**
-     - Email: `superadmin@sonia.com`
-     - Password: `admin123`
+     - Email: `superadmin@yourdomain.com`
+     - Password: `yourpass`
    - **Admin:**
-     - Email: `admin@sonia.com`
-     - Password: `admin123`
+     - Email: `admin@yourdomain.com`
+     - Password: `yourpass`
    - **Production User:**
-     - Email: `user@sonia.com`
-     - Password: `user123`
+     - Email: `user@yourdomain.com`
+     - Password: `yourpass`
 
 4. **Copy the User UID** for each user (click on the user to see it)
 
@@ -70,7 +70,7 @@
   userId: [CQtyPxPveeaDgt3POfM24szXBOP2]
   name: "Super Admin"
   role: "SuperAdmin"
-  email: "superadmin@sonia.com"
+  email: "email.com"
   createdAt: "09/04/2026"
   isActive: true
   ```
@@ -82,7 +82,7 @@
   userId: [a11a24yfkGgNzZ0mCE0CpnhiBsY2]
   name: "Admin Manager"
   role: "Admin"
-  email: "admin@sonia.com"
+  email: "email.com"
   createdAt: "09/04/2026"
   isActive: true
   ```
@@ -94,7 +94,7 @@
   userId: [DqOLUeC3eqVwrysCQyp6FSSe7la2]
   name: "Production Staff"
   role: "User"
-  email: "user@sonia.com"
+  email: "email.com"
   createdAt: "09/04/2026"
   isActive: true
   ```
@@ -118,8 +118,8 @@
 ### 7. Test Login
 
 Try logging in with:
-- **Email:** `superadmin@sonia.com`
-- **Password:** `admin123`
+- **Email:** `email.com`
+- **Password:** `[yourpass]`
 
 You should see the Dashboard with Super Admin privileges.
 
