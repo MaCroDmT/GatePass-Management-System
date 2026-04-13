@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Gate Pass Management</string>
+    
+    <!-- Common Strings -->
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="approval">Approval</string>
+    <string name="reports">Reports</string>
+    <string name="notifications">Notifications</string>
+    <string name="create_gate_pass">Create Gate Pass</string>
+    <string name="gate_pass_details">Gate Pass Details</string>
+    <string name="movement_entry">Movement Entry</string>
+    
+    <!-- Gate Pass Form -->
+    <string name="concerned_people">Concerned People (Email)</string>
+    <string name="goods_name">Goods Name</string>
+    <string name="style_no">Style No</string>
+    <string name="quantity">Quantity</string>
+    <string name="destination">Destination</string>
+    <string name="purpose">Purpose</string>
+    <string name="returnable_date">Returnable Date</string>
+    <string name="submit">Submit</string>
+    <string name="cancel">Cancel</string>
+    <string name="approve">Approve</string>
+    <string name="reject">Reject</string>
+    <string name="complete">Complete</string>
+    <string name="reopen">Reopen</string>
+    <string name="generate_pdf">Generate PDF</string>
+    
+    <!-- Status Strings -->
+    <string name="status_pending">Pending</string>
+    <string name="status_approved">Approved</string>
+    <string name="status_in_progress">In Progress</string>
+    <string name="status_partially_returned">Partially Returned</string>
+    <string name="status_redispatched">Re-dispatched</string>
+    <string name="status_completed">Completed</string>
+    <string name="status_reopened">Reopened</string>
+    
+    <!-- Movement Types -->
+    <string name="outward">Outward</string>
+    <string name="inward">Inward</string>
+    <string name="re_dispatch">Re-dispatch</string>
+    
+    <!-- Dashboard -->
+    <string name="total_gate_passes">Total Gate Passes</string>
+    <string name="pending_approval">Pending Approval</string>
+    <string name="in_progress">In Progress</string>
+    <string name="completed">Completed</string>
+    <string name="partially_returned">Partially Returned</string>
+    
+    <!-- Error Messages -->
+    <string name="error_network">Network error. Please check your connection.</string>
+    <string name="error_auth_failed">Authentication failed. Please check your credentials.</string>
+    <string name="error_unauthorized">You are not authorized to perform this action.</string>
+    <string name="error_something_wrong">Something went wrong. Please try again.</string>
+    
+    <!-- Success Messages -->
+    <string name="success_gate_pass_created">Gate Pass created successfully</string>
+    <string name="success_approved">Gate Pass approved</string>
+    <string name="success_rejected">Gate Pass rejected</string>
+    <string name="success_movement_record">Movement recorded successfully</string>
+    <string name="success_completed">Gate Pass marked as completed</string>
+    <string name="success_reopened">Gate Pass reopened successfully</string>
+    
+    <!-- Validation Messages -->
+    <string name="validation_required_field">This field is required</string>
+    <string name="validation_invalid_email">Please enter a valid email</string>
+    <string name="validation_invalid_quantity">Please enter a valid quantity</string>
+    <string name="validation_future_date">Please select a future date</string>
+
+    <!-- User Management -->
+    <string name="user_management">User Management</string>
+    <string name="add_user">Add User</string>
+    <string name="edit_user">Edit User</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="activate">Activate</string>
+    <string name="deactivate">Deactivate</string>
+    <string name="full_name">Full Name</string>
+    <string name="role">Role</string>
+    <string name="password_min_6">Minimum 6 characters</string>
+    <string name="no_users_found">No users found</string>
+</resources>

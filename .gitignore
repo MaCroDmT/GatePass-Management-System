@@ -1,0 +1,67 @@
+# ================================
+# Generated Files
+# ================================
+*.iml
+.gradle/
+local.properties
+/.idea/
+/build/
+/captures/
+.externalNativeBuild/
+.cxx/
+out/
+gen/
+bin/
+lint/intermediate-results/
+lint-results.xml
+.navigation/
+
+# ================================
+# Build Outputs
+# ================================
+*.apk
+*.aab
+*.dex
+*.class
+
+# ================================
+# IDE Specific
+# ================================
+.DS_Store
+.idea/*
+!.idea/runConfigurations/
+
+# ================================
+# CRITICAL: Sensitive & Secret Files
+# ================================
+
+# Firebase configuration (contains API keys, project IDs)
+app/google-services.json
+
+# Any file containing secrets or keys
+secrets.properties
+keystore.properties
+*.keystore
+*.jks
+
+# Crash logs
+GatePass_crash_log.txt
+app_errors.log
+
+# ================================
+# User-specific / Machine-specific
+# ================================
+*.log
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# ================================
+# Fastlane (if added later)
+# ================================
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+fastlane/readme.md

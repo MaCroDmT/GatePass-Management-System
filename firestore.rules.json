@@ -1,0 +1,28 @@
+{
+  "rules": {
+    "Users": {
+      "$userId": {
+        ".read": "auth != null",
+        ".write": "auth != null"
+      }
+    },
+    "GatePass": {
+      "$gpid": {
+        ".read": "auth != null",
+        ".write": "auth != null"
+      }
+    },
+    "Movements": {
+      "$movementId": {
+        ".read": "auth != null",
+        ".write": "auth != null"
+      }
+    },
+    "Notifications": {
+      "$notificationId": {
+        ".read": "auth != null",
+        ".write": "auth != null"
+      }
+    }
+  }
+}

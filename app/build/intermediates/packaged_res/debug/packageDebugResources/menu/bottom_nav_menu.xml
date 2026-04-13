@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@android:drawable/ic_menu_view"
+        android:title="@string/dashboard" />
+    <item
+        android:id="@+id/navigation_create"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="@string/create_gate_pass" />
+    <item
+        android:id="@+id/navigation_approval"
+        android:icon="@android:drawable/ic_menu_upload"
+        android:title="@string/approval" />
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@android:drawable/ic_menu_myplaces"
+        android:title="@string/notifications" />
+    <item
+        android:id="@+id/navigation_reports"
+        android:icon="@android:drawable/ic_menu_agenda"
+        android:title="@string/reports" />
+</menu>

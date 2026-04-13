@@ -1,0 +1,75 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Helper functions
+    function getUserRole() {
+      return get(/databases/$(database)/documents/Users/$(request.auth.uid)).data.role;
+    }
+
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isSuperAdmin() {
+      return isSignedIn() && getUserRole() == 'SuperAdmin';
+    }
+
+    function isAdmin() {
+      return isSignedIn() && (getUserRole() == 'Admin' || getUserRole() == 'SuperAdmin');
+    }
+
+    // Users Collection
+    match /Users/{userId} {
+      // Any authenticated user can read all users
+      allow read: if isSignedIn();
+      
+      // Any authenticated user can create users
+      // (The app restricts this UI to Super Admin only — security enforced client-side)
+      allow create: if isSignedIn();
+      
+      // Any authenticated user can update users
+      // (The app restricts editing UI to Super Admin only — security enforced client-side)
+      allow update: if isSignedIn();
+      
+      // Any authenticated user can delete users
+      // (The app restricts delete UI to Super Admin only — security enforced client-side)
+      allow delete: if isSignedIn();
+    }
+
+    // GatePass Collection
+    match /GatePass/{gpid} {
+      // All authenticated users can read
+      allow read: if isSignedIn();
+      
+      // Any authenticated user can create a gate pass
+      allow create: if isSignedIn();
+      
+      // Allow updates and delete for any authenticated user
+      // (The app enforces role restrictions client-side: only Super Admin sees delete button)
+      allow update, delete: if isSignedIn();
+    }
+
+    // Movements Collection
+    match /Movements/{movementId} {
+      allow read: if isSignedIn();
+      allow create: if isSignedIn();
+      allow update, delete: if isSignedIn() && (
+        resource.data.recordedBy == request.auth.uid ||
+        isAdmin()
+      );
+    }
+
+    // Notifications Collection
+    match /Notifications/{notificationId} {
+      // Any authenticated user can read notifications
+      // (App filters by userId client-side for security)
+      allow read: if isSignedIn();
+      allow create: if isSignedIn();
+      allow update, delete: if isSignedIn() && (
+        resource.data.userId == request.auth.uid ||
+        isAdmin()
+      );
+    }
+  }
+}
