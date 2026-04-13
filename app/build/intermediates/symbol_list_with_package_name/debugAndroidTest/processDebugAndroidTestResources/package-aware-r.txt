@@ -1,3 +1,0 @@
-com.sonia.gatepass.test
-style WhiteBackgroundDialogTheme
-style WhiteBackgroundTheme

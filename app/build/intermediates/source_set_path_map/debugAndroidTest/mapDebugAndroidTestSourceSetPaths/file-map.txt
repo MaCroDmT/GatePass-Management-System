@@ -1,6 +1,0 @@
-com.sonia.gatepass.test.app-annotation-experimental-1.3.0-0 C:\Users\User\.gradle\caches\transforms-4\9c88fbbe1604d9ab080e1de924617dce\transformed\annotation-experimental-1.3.0\res
-com.sonia.gatepass.test.app-core-1.5.0-1 C:\Users\User\.gradle\caches\transforms-4\b5fa4d27310e84fc88a699bd70d76007\transformed\core-1.5.0\res
-com.sonia.gatepass.test.app-androidTest-2 C:\Users\User\Downloads\Gatepass\app\build\generated\res\resValues\androidTest\debug
-com.sonia.gatepass.test.app-mergeDebugAndroidTestResources-3 C:\Users\User\Downloads\Gatepass\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
-com.sonia.gatepass.test.app-mergeDebugAndroidTestResources-4 C:\Users\User\Downloads\Gatepass\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
-com.sonia.gatepass.test.app-debugAndroidTest-5 C:\Users\User\Downloads\Gatepass\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources
